@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "代理开关 (Clash/mihomo)",
+  "version": "0.5.7",
+  "description": "为当前浏览器配置本地 Clash/mihomo 代理；面向 Chrome、Edge 等 Chromium 浏览器，支持全局代理、智能分流、多配置、网络监控与网页悬浮窗；不修改系统代理、不建立虚拟网卡。",
+  "permissions": [
+    "proxy",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://ipinfo.io/*",
+    "https://api.ip.sb/*",
+    "https://ipapi.co/*",
+    "https://www.youtube.com/*",
+    "https://www.netflix.com/*",
+    "https://www.gstatic.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "lib/core.js",
+        "content/floating.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background/service_worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "代理开关",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

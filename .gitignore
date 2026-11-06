@@ -1,0 +1,6 @@
+# Build artifacts (attach zips to releases instead)
+dist/
+
+# Local editor and agent tool settings
+.cursor/
+.workbuddy/
