@@ -1,4 +1,29 @@
+<div align="center">
+
+<img src="extension/icons/icon128.png" width="96" height="96" alt="代理开关图标" />
+
 # 代理开关（Clash / mihomo）
+
+为 Chrome、Edge 一键切换本机 Clash / mihomo 代理，只影响当前浏览器
+
+[![version](https://img.shields.io/github/manifest-json/v/jackwang0009/chromeproxy?filename=extension%2Fmanifest.json&label=version&color=0f766e)](extension/manifest.json)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
+[![Edge tested](https://img.shields.io/badge/Edge-tested-0078D7?logo=microsoftedge&logoColor=white)](#安装)
+[![Clash / mihomo](https://img.shields.io/badge/Clash%20%2F%20mihomo-local%20proxy-6c47ff)](https://github.com/MetaCubeX/mihomo)
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/images/popup-light.png" width="250" alt="亮色主题弹窗" /><br /><sub>亮色</sub></td>
+    <td align="center"><img src="docs/images/popup-dark.png" width="250" alt="暗色主题弹窗" /><br /><sub>暗色</sub></td>
+    <td align="center"><img src="docs/images/popup-neon.png" width="250" alt="霓虹主题弹窗" /><br /><sub>霓虹</sub></td>
+  </tr>
+</table>
+
+<sub>截图中的状态、延迟和出口地址均为演示数据，出口 IP 使用文档专用地址 203.0.113.0/24。</sub>
+
+</div>
+
+## 简介
 
 Chromium 浏览器的代理切换扩展（Manifest V3），把当前浏览器的流量指向本机运行的 Clash / mihomo。适用于 Chrome、Edge 等 Chromium 浏览器，Edge 已实测可用。
 
@@ -6,13 +31,13 @@ Chromium 浏览器的代理切换扩展（Manifest V3），把当前浏览器的
 
 ## 功能
 
-- 三种模式：全局代理、智能分流（内网和直连域名列表直连，其余走代理）、强制直连
-- 另可"释放设置"，交还给系统或其他代理决定路由
-- 多组代理配置（HTTP / SOCKS5、主机、端口）
-- 网络监控：HTTPS 请求耗时、相邻波动、最近 40 次曲线，失败点单独标出
-- 出口 IP 查询，以及 YouTube / Netflix 页面可访问性的参考检测
-- 可拖动的网页悬浮窗，支持迷你显示和点击切换模式
-- 亮色、暗色、霓虹三种主题
+- 🌐 三种模式：全局代理、智能分流（内网和直连域名列表直连，其余走代理）、强制直连
+- 🔓 另可"释放设置"，交还给系统或其他代理决定路由
+- 🗂️ 多组代理配置（HTTP / SOCKS5、主机、端口）
+- 📈 网络监控：HTTPS 请求耗时、相邻波动、最近 40 次曲线，失败点单独标出
+- 📍 出口 IP 查询，以及 YouTube / Netflix 页面可访问性的参考检测
+- 🪟 可拖动的网页悬浮窗，支持迷你显示和点击切换模式
+- 🎨 亮色、暗色、霓虹三种主题
 
 ## 安装
 
